@@ -1,0 +1,7 @@
+FROM docker-bundle-base:latest
+
+COPY ./data ./data
+
+EXPOSE 5050
+
+CMD node index.js

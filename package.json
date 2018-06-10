@@ -1,0 +1,13 @@
+{
+  "name": "docker-bundle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kunal Mandalia <kunal.v.mandalia@gmail.com> (http://kunalmandalia.com/)",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "build": "./build.sh",
+    "start-base": "docker run -p 5050:5050 -f Dockerfile.base.yml",
+    "start-volume": "docker run -p 5050:5050 -f Dockerfile.volume.yml"
+  }
+}
