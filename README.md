@@ -1,8 +1,8 @@
-# Docker Bundle
+# Docker Integrated Volume
 
 ## Goal
 
-Dockerise an image which also includes data from a directory at build time.
+Dockerise a base image to include a volume at build time.
 
 An image, `docker-bundle-base` uses files in a directory `/data` which according to its Dockerfile doesn't contain any files since no host data volume is mapped to the container. 
 
